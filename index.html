@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Acerte a Toupeira</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Acerte a Toupeira</h1>
+
+    <section class="hud">
+      <div><span>Pontos</span><strong id="score">0</strong></div>
+      <div><span>Tempo</span><strong id="time">30</strong></div>
+      <div><span>Combo</span><strong id="combo">x1</strong></div>
+      <div><span>Recorde</span><strong id="best">0</strong></div>
+    </section>
+
+    <section class="field" id="field"></section>
+
+    <div class="actions">
+      <button id="start">Começar</button>
+    </div>
+    <p class="hint">Toupeira comum vale 10 · dourada vale 50 · <strong>não</strong> acerte a bomba! Acertos seguidos aumentam o combo.</p>
+
+    <div id="overlay" class="overlay hidden">
+      <div class="card">
+        <h2 id="ov-title">Fim!</h2>
+        <p id="ov-text"></p>
+        <button id="again">Jogar de novo</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/spawner.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
